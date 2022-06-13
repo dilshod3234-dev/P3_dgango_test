@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add customers</title>
+</head>
+<body>
+
+<form action="{% url 'costumer_add' %}" method="post">
+    {% csrf_token %}
+    {{ forms.as_p }}
+    <div class="col-12">
+        <button class="btn btn-primary">
+            add customers
+        </button>
+    </div>
+
+</form>
+
+</body>
+</html>
